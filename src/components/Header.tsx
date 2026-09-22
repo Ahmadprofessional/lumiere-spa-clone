@@ -23,14 +23,14 @@ export function Header() {
 
   return (
     <header className="relative w-full bg-background">
-      <div className="mx-auto flex max-w-[1345px] items-center justify-center px-6 pt-6 md:justify-center">
-        <Link href="/" className="relative h-[70px] w-[280px] md:h-[88px] md:w-[351px]">
+      <div className="mx-auto flex max-w-[1345px] items-center justify-between px-6 pt-6 md:justify-center">
+        <Link href="/" className="relative h-[54px] w-[216px] shrink-0 md:h-[88px] md:w-[351px]">
           <Image
             src="/images/logo.avif"
             alt="Lumière — Luxury Wellness & Spa"
             fill
             priority
-            className="object-contain"
+            className="object-contain object-left md:object-center"
           />
         </Link>
 
@@ -38,7 +38,7 @@ export function Header() {
           type="button"
           aria-label={open ? "Close menu" : "Open menu"}
           onClick={() => setOpen((v) => !v)}
-          className="absolute right-6 top-8 flex h-[33px] w-[33px] items-center justify-center rounded-[3px] bg-[#D09F47] text-white md:hidden"
+          className="flex h-[33px] w-[33px] shrink-0 items-center justify-center rounded-[3px] bg-[#D09F47] text-white md:hidden"
         >
           {open ? <CloseIcon className="h-4 w-4" /> : <MenuIcon className="h-4 w-4" />}
         </button>
