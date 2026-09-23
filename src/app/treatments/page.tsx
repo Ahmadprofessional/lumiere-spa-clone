@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 const treatments: Treatment[] = [
   {
     title: "Back, Neck & Shoulder Escape",
-    image: { src: "/images/treatment-back-neck-shoulder.avif", alt: "Back, neck & shoulder massage" },
+    image: { src: "/images/treatment-back-neck-shoulder.jpg", alt: "Back, neck & shoulder massage" },
     priceLines: ["30 Minutes | £45"],
     description:
       "Melt away the stresses of everyday life with this focused massage designed to ease built-up tension in the back, neck and shoulders. Gentle yet effective techniques release tight muscles, improve circulation and leave you feeling lighter, calmer and completely refreshed. Perfect for those short on time but in need of a luxurious reset.",

@@ -3,7 +3,7 @@ import { ServiceCard, type Service } from "@/components/ServiceCard";
 const services: Service[] = [
   {
     title: "Back, Neck & Shoulder Escape",
-    image: { src: "/images/treatment-back-neck-shoulder.avif", alt: "Back, neck & shoulder massage" },
+    image: { src: "/images/treatment-back-neck-shoulder.jpg", alt: "Back, neck & shoulder massage" },
     durationRange: "30 min",
     fromPrice: "From £45",
   },

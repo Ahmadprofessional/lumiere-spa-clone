@@ -23,7 +23,7 @@ export function Header() {
 
   return (
     <header className="relative w-full bg-background">
-      <div className="mx-auto flex max-w-[1345px] items-center justify-between px-6 pt-6 md:justify-center">
+      <div className="mx-auto flex max-w-[1345px] items-center justify-between px-6 pb-6 pt-6 md:justify-center md:pb-0">
         <Link href="/" className="relative h-[54px] w-[216px] shrink-0 md:h-[88px] md:w-[351px]">
           <Image
             src="/images/logo.avif"
