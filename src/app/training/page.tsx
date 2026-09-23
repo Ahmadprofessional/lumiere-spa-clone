@@ -28,43 +28,41 @@ export default function TrainingPage() {
 
           <div className="mx-auto mt-10 grid max-w-[560px] grid-cols-1 gap-8 md:mt-14">
             {courses.map((course) => (
-              <div key={course.id} className="flex flex-col items-center gap-6">
-                <Link
-                  href="/training/level-04-swedish-massage/"
-                  className="flex w-full flex-col items-center gap-3 border-[1.6px] border-[#C89A5B] pb-6 text-center transition-opacity hover:opacity-90"
-                >
-                  <div className="relative aspect-[1600/870] w-full">
-                    <Image
-                      src={course.image}
-                      alt="Swedish massage training course"
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                  <h3 className="font-heading text-2xl font-semibold uppercase text-[#1C1C1B]">
-                    Swedish Massage Level 4 Training Course
-                  </h3>
-                  <hr className="w-full border-t border-black/20" />
-                  <p className="font-sans text-lg font-medium uppercase text-[#44413C]">
-                    Course Price | £699
-                  </p>
-                  <p className="font-sans text-base uppercase text-[#44413C]">
-                    Duration: {course.duration}
-                  </p>
-                  <p className="font-sans text-lg italic text-[#44413C]">
-                    Fully CPD Accredited Course
-                    <br />
-                    Become Fully Certified in Swedish Massage
-                    <br />
-                    Practical Hands-On Training
-                  </p>
-                </Link>
+              <div
+                key={course.id}
+                className="flex w-full flex-col items-center gap-3 border-[1.6px] border-[#C89A5B] pb-6 text-center"
+              >
+                <div className="relative aspect-[1600/870] w-full">
+                  <Image
+                    src={course.image}
+                    alt="Swedish massage training course"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <h3 className="font-heading text-2xl font-semibold uppercase text-[#1C1C1B]">
+                  Swedish Massage Level 4 Training Course
+                </h3>
+                <hr className="w-full border-t border-black/20" />
+                <p className="font-sans text-lg font-medium uppercase text-[#44413C]">
+                  Course Price | £699
+                </p>
+                <p className="font-sans text-base uppercase text-[#44413C]">
+                  Duration: {course.duration}
+                </p>
+                <p className="font-sans text-lg italic text-[#44413C]">
+                  Fully CPD Accredited Course
+                  <br />
+                  Become Fully Certified in Swedish Massage
+                  <br />
+                  Practical Hands-On Training
+                </p>
 
                 <Link
-                  href="mailto:info@lumierespa.co.uk"
-                  className="inline-block rounded-[3px] bg-[#C89A5B] px-6 py-3 font-sans text-xl font-semibold text-white"
+                  href="/training/level-04-swedish-massage/"
+                  className="mt-2 inline-block rounded-[3px] bg-[#C89A5B] px-6 py-3 font-sans text-xl font-semibold text-white"
                 >
-                  Email Us If You Are Interested
+                  Read More
                 </Link>
               </div>
             ))}
