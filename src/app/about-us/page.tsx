@@ -47,12 +47,12 @@ export default function AboutUsPage() {
             priority
             className="scale-125 -translate-x-[20%] object-cover md:scale-100 md:translate-x-0"
           />
-          <div className="absolute bottom-[8%] right-[6%] h-[6%] w-[28%] min-h-[28px] min-w-[110px]">
+          <div className="absolute bottom-[8%] left-[6%] h-[6%] w-[28%] min-h-[28px] min-w-[110px]">
             <Image
               src="/images/about-hero-watermark.png"
               alt="Lumière — Luxury Wellness & Spa"
               fill
-              className="object-contain object-right"
+              className="object-contain object-left"
             />
           </div>
         </section>
