@@ -39,22 +39,14 @@ export default function AboutUsPage() {
       <Header />
       <main className="flex-1">
         {/* Hero */}
-        <section className="relative aspect-[1672/316] w-full min-h-[220px] overflow-hidden md:min-h-0">
+        <section className="relative aspect-video w-full">
           <Image
-            src="/images/about-hero-new.png"
+            src="/images/about-hero-v2.jpg"
             alt="Lumière massage therapy"
             fill
             priority
-            className="scale-125 -translate-x-[20%] object-cover md:scale-100 md:translate-x-0"
+            className="object-cover"
           />
-          <div className="absolute bottom-[8%] left-[6%] h-[6%] w-[28%] min-h-[28px] min-w-[110px]">
-            <Image
-              src="/images/about-hero-watermark.png"
-              alt="Lumière — Luxury Wellness & Spa"
-              fill
-              className="object-contain object-left"
-            />
-          </div>
         </section>
 
         {/* Who We Are */}
