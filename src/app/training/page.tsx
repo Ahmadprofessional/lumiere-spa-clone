@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 };
 
 const courses = [
-  { id: "level-04-a", duration: "01/02", image: "/images/training-course.jpg" },
+  { id: "level-04-a", duration: "01/02", image: "/images/training-course-v2.jpg" },
 ];
 
 export default function TrainingPage() {
