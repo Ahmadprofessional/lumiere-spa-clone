@@ -4,15 +4,7 @@ import { FacebookIcon, InstagramIcon } from "@/components/icons";
 
 export function Footer() {
   return (
-    <footer className="relative isolate mt-auto w-full text-black">
-      <Image
-        src="/images/page-title-bg.jpeg"
-        alt=""
-        fill
-        className="-z-10 object-cover"
-        aria-hidden
-      />
-
+    <footer className="relative mt-auto w-full text-black" style={{ backgroundColor: "#F9E7C6" }}>
       <div className="mx-auto grid max-w-[1345px] grid-cols-1 gap-12 px-6 py-16 text-center md:grid-cols-3 md:py-20 md:text-left">
         <div className="flex flex-col items-center gap-4 md:items-start">
           <div className="relative h-[130px] w-[130px] rounded-full bg-white p-2 shadow-sm">
@@ -60,9 +52,6 @@ export function Footer() {
           <h3 className="font-heading text-2xl font-semibold uppercase text-black">
             Book Your Appointment
           </h3>
-          <p className="font-sans text-lg font-light text-black">
-            Indulge in luxury. You deserve it.
-          </p>
           <Link
             href="/book-your-appointment/"
             className="rounded-[3px] bg-[#C89A5B] px-6 py-3 font-sans text-xl font-medium text-white"
