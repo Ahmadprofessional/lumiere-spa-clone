@@ -57,19 +57,25 @@ export default function TreatmentsPage() {
             className="min-h-[300px] flex-1 bg-cover bg-center"
             style={{ backgroundImage: "url(/images/treatments-hero-bg.jpg)" }}
           />
-          <div className="flex flex-1 flex-col gap-5 bg-white px-6 py-10 md:px-16 md:py-20">
-            <h2 className="font-heading text-[32px] font-medium uppercase leading-tight text-black md:text-[45px]">
+          <div
+            className="flex flex-1 flex-col gap-5 px-6 py-10 md:px-16 md:py-20"
+            style={{
+              backgroundImage:
+                "linear-gradient(90deg, #5D3500 0%, #FFB9E5 50.1068%, #E79100 100%)",
+            }}
+          >
+            <h2 className="font-heading text-[32px] font-medium uppercase leading-tight text-white md:text-[45px]">
               Expert Hands.
               <br />
               Deep Relaxation.
               <br />
-              <span className="text-[#DFA33B]">Lasting Wellbeing</span>
+              <span className="text-[#FFF7E8]">Lasting Wellbeing</span>
             </h2>
-            <p className="max-w-lg font-sans text-lg font-medium text-black">
+            <p className="max-w-lg font-sans text-lg font-medium text-white">
               At Lumière, we believe true wellness begins with taking time to slow down, breathe and
               restore both body and mind.
             </p>
-            <p className="max-w-lg font-sans text-lg font-medium text-black">
+            <p className="max-w-lg font-sans text-lg font-medium text-white">
               Our experienced therapists provide personalised massage treatments designed to ease
               muscular tension, reduce stress and leave you feeling renewed. Whether you&rsquo;re
               seeking relaxation, recovery or simply time for yourself, every treatment is tailored to
