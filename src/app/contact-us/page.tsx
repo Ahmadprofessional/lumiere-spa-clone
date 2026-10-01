@@ -32,7 +32,7 @@ export default function ContactUsPage() {
           }}
         >
           <div className="mx-auto grid max-w-[1345px] grid-cols-1 gap-12 md:grid-cols-2">
-            <div className="flex flex-col items-center gap-6 text-center md:items-start md:text-left">
+            <div className="flex flex-col items-center gap-6 text-center">
               <h2 className="font-heading text-3xl font-bold uppercase tracking-wide text-[#B1973F] md:text-4xl">
                 Contact Us
               </h2>
