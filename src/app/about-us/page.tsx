@@ -50,12 +50,18 @@ export default function AboutUsPage() {
         </section>
 
         {/* Who We Are */}
-        <section className="bg-[#FAF6EF] px-6 py-20 text-center md:py-28">
+        <section
+          className="px-6 py-20 text-center md:py-28"
+          style={{
+            backgroundImage:
+              "linear-gradient(90deg, #5D3500 0%, #FFB9E5 50.1068%, #E79100 100%)",
+          }}
+        >
           <div className="mx-auto flex max-w-3xl flex-col items-center gap-6">
-            <h2 className="font-heading text-3xl font-bold uppercase tracking-wide text-[#B1973F] md:text-4xl">
+            <h2 className="font-heading text-3xl font-bold uppercase tracking-wide text-white md:text-4xl">
               Who We Are
             </h2>
-            <p className="font-heading text-xl font-light leading-relaxed text-[#B1973F] md:text-2xl">
+            <p className="font-heading text-xl font-light leading-relaxed text-white md:text-2xl">
               Inspired by the timeless sophistication of the French Riviera, Lumière serves as a
               sanctuary where wellness and refined luxury unite in perfect harmony. Here, you can
               relax and revitalise in a serene environment crafted to awaken your senses. Enjoy our
@@ -86,8 +92,14 @@ export default function AboutUsPage() {
         </section>
 
         {/* Meet the Team */}
-        <section className="bg-[#FAF6EF] px-6 py-16 md:py-20">
-          <h2 className="text-center font-heading text-[32px] font-medium uppercase text-black md:text-[45px]">
+        <section
+          className="px-6 py-16 md:py-20"
+          style={{
+            backgroundImage:
+              "linear-gradient(90deg, #5D3500 0%, #FFB9E5 50.1068%, #E79100 100%)",
+          }}
+        >
+          <h2 className="text-center font-heading text-[32px] font-medium uppercase text-white md:text-[45px]">
             Meet The Team
           </h2>
 
@@ -95,7 +107,7 @@ export default function AboutUsPage() {
             {team.map((member) => (
               <div
                 key={member.name}
-                className="flex w-full max-w-sm flex-col items-center gap-4 border-[1.6px] border-[#C89A5B] px-6 py-8 text-center"
+                className="flex w-full max-w-sm flex-col items-center gap-4 border-[1.6px] border-[#FFF7E8] px-6 py-8 text-center"
               >
                 <div className="relative flex h-[180px] w-[180px] items-center justify-center overflow-hidden rounded-full bg-[#F3E7D1]">
                   {member.image ? (
@@ -106,14 +118,14 @@ export default function AboutUsPage() {
                     </span>
                   )}
                 </div>
-                <h3 className="font-heading text-2xl font-semibold uppercase text-black">
+                <h3 className="font-heading text-2xl font-semibold uppercase text-white">
                   {member.name}
                 </h3>
-                <p className="font-sans text-base text-[#C89A5B]">{member.title}</p>
-                <p className="font-sans text-sm font-semibold uppercase tracking-wide text-black">
+                <p className="font-sans text-base text-[#FFF7E8]">{member.title}</p>
+                <p className="font-sans text-sm font-semibold uppercase tracking-wide text-white">
                   Profile
                 </p>
-                <p className="font-sans text-base text-[#44413C]">{member.profile}</p>
+                <p className="font-sans text-base text-white/90">{member.profile}</p>
               </div>
             ))}
           </div>

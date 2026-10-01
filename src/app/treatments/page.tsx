@@ -84,9 +84,15 @@ export default function TreatmentsPage() {
           </div>
         </section>
 
-        <section className="px-6 py-16 md:py-20" style={{ backgroundColor: "#F9E7C6" }}>
+        <section
+          className="px-6 py-16 md:py-20"
+          style={{
+            backgroundImage:
+              "linear-gradient(90deg, #5D3500 0%, #FFB9E5 50.1068%, #E79100 100%)",
+          }}
+        >
           <div className="mx-auto max-w-[1345px]">
-            <h2 className="text-center font-heading text-[32px] font-medium text-black md:text-[45px]">
+            <h2 className="text-center font-heading text-[32px] font-medium text-white md:text-[45px]">
               Our Treatments
             </h2>
             <div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-4 md:mt-14">

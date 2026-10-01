@@ -21,8 +21,14 @@ export default function TrainingPage() {
       <main className="flex-1">
         <PageTitleBanner title="Training" />
 
-        <section className="px-6 py-16 md:py-20" style={{ backgroundColor: "#F9E7C6" }}>
-          <h2 className="text-center font-heading text-[32px] font-medium text-[#171716] md:text-[45px]">
+        <section
+          className="px-6 py-16 md:py-20"
+          style={{
+            backgroundImage:
+              "linear-gradient(90deg, #5D3500 0%, #FFB9E5 50.1068%, #E79100 100%)",
+          }}
+        >
+          <h2 className="text-center font-heading text-[32px] font-medium text-white md:text-[45px]">
             Our Courses
           </h2>
 
@@ -30,7 +36,7 @@ export default function TrainingPage() {
             {courses.map((course) => (
               <div
                 key={course.id}
-                className="flex w-full flex-col items-center gap-3 border-[1.6px] border-[#C89A5B] pb-6 text-center"
+                className="flex w-full flex-col items-center gap-3 border-[1.6px] border-[#FFF7E8] pb-6 text-center"
               >
                 <div className="relative aspect-[1600/870] w-full">
                   <Image
@@ -40,17 +46,17 @@ export default function TrainingPage() {
                     className="object-cover"
                   />
                 </div>
-                <h3 className="font-heading text-2xl font-semibold uppercase text-[#1C1C1B]">
+                <h3 className="font-heading text-2xl font-semibold uppercase text-white">
                   Swedish Massage Level 4 Training Course
                 </h3>
-                <hr className="w-full border-t border-black/20" />
-                <p className="font-sans text-lg font-medium uppercase text-[#44413C]">
+                <hr className="w-full border-t border-white/30" />
+                <p className="font-sans text-lg font-medium uppercase text-white">
                   Course Price | £699
                 </p>
-                <p className="font-sans text-base uppercase text-[#44413C]">
+                <p className="font-sans text-base uppercase text-white">
                   Duration: {course.duration}
                 </p>
-                <p className="font-sans text-lg italic text-[#44413C]">
+                <p className="font-sans text-lg italic text-white">
                   Fully CPD Accredited Course
                   <br />
                   Become Fully Certified in Swedish Massage

@@ -67,23 +67,29 @@ export default function GiftVoucherPage() {
           </div>
         </section>
 
-        <section className="px-6 py-16 md:py-20" style={{ backgroundColor: "rgba(247,216,124,0.08)" }}>
+        <section
+          className="px-6 py-16 md:py-20"
+          style={{
+            backgroundImage:
+              "linear-gradient(90deg, #5D3500 0%, #FFB9E5 50.1068%, #E79100 100%)",
+          }}
+        >
           <div className="mx-auto flex max-w-[1345px] flex-col items-center gap-3 text-center">
-            <h2 className="font-heading text-[32px] font-medium uppercase text-black md:text-[45px]">
+            <h2 className="font-heading text-[32px] font-medium uppercase text-white md:text-[45px]">
               How It Works
             </h2>
-            <p className="font-sans text-lg font-medium uppercase text-black">
+            <p className="font-sans text-lg font-medium uppercase text-white">
               Create the perfect gift in just a few clicks.
             </p>
 
             <div className="mt-8 grid grid-cols-1 gap-10 md:grid-cols-3">
               {steps.map((step) => (
                 <div key={step.title} className="flex flex-col items-center gap-3">
-                  <div className="relative h-[69px] w-[69px] overflow-hidden rounded-full border-[1.6px] border-[#C89A5B]">
+                  <div className="relative h-[69px] w-[69px] overflow-hidden rounded-full border-[1.6px] border-[#FFF7E8]">
                     <Image src={step.icon} alt="" fill className="object-fill" />
                   </div>
-                  <h3 className="font-heading text-2xl font-bold text-black">{step.title}</h3>
-                  <p className="max-w-xs font-sans text-lg text-[#212121]">{step.body}</p>
+                  <h3 className="font-heading text-2xl font-bold text-white">{step.title}</h3>
+                  <p className="max-w-xs font-sans text-lg text-white/90">{step.body}</p>
                 </div>
               ))}
             </div>
