@@ -4,7 +4,15 @@ import { FacebookIcon, InstagramIcon } from "@/components/icons";
 
 export function Footer() {
   return (
-    <footer className="relative mt-auto w-full text-black" style={{ backgroundColor: "#F9E7C6" }}>
+    <footer className="relative isolate mt-auto w-full text-black">
+      <Image
+        src="/images/footer-bg-gold.jpg"
+        alt=""
+        fill
+        className="-z-10 object-cover object-[0%_75%]"
+        aria-hidden
+      />
+
       <div className="mx-auto grid max-w-[1345px] grid-cols-1 gap-12 px-6 py-16 text-center md:grid-cols-3 md:py-20 md:text-left">
         <div className="flex flex-col items-center gap-4 md:items-start">
           <div className="relative h-[130px] w-[130px] rounded-full bg-white p-2 shadow-sm">
