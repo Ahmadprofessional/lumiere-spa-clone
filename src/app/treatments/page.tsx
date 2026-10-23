@@ -30,7 +30,7 @@ const treatments: Treatment[] = [
   {
     title: "Aromatherapy Massage",
     image: { src: "/images/treatment-aromatherapy.avif", alt: "Aromatherapy massage" },
-    priceLines: ["45 Minutes | £75", "60 Minutes | £90", "90 Minutes | £120"],
+    priceLines: ["45 Minutes | £80", "60 Minutes | £95", "90 Minutes | £125"],
     description:
       "Escape into deep relaxation with a luxurious massage using a bespoke blend of premium aromatherapy essential oils, carefully selected to enhance your wellbeing. Flowing massage techniques calm the nervous system, relieve stress and nourish the skin, creating a truly indulgent sensory experience.",
     bookHref: "/book-your-appointment/",
